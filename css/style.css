@@ -53,7 +53,7 @@ colores CANCER PROSTATA:
 dorado= #ffcc00
 dorado activo= #FAA300
 naranja= #ff5e00
-rosa= #7c5781
+rosa= #a45faf
 rosa oscuro= #74517b
 gris claro= #f8f7f4
 gris oscuro= #D3D3D3
@@ -167,11 +167,11 @@ figure {
   color: #FAA300;
 }
 .morado{
-  color: #7c5781;
+  color: #a45faf;
 }
 .bgdorado{
   font-weight: 700;
-  color: #7c5781;
+  color: #a45faf;
   letter-spacing: 1.5px;
   background-color: #ffcc00;
   padding-left: 3px;
@@ -181,7 +181,7 @@ figure {
   font-weight: 400;
   color: white;
   letter-spacing: 1.5px;
-  background-color: #7c5781;
+  background-color: #a45faf;
   padding-left: 3px;
   padding-right: 2px;
 }
@@ -255,13 +255,13 @@ figure {
 .destacado h5{
 		font-weight: 600;
 	  text-align: center;
-		color: #7c5781;
+		color: #a45faf;
 		margin-bottom: -9px;
 }
 .destacado p{
 		line-height: 1.2;
 	  text-align: center;
-		color: #7c5781;
+		color: #a45faf;
 }
 #ico-page {
   width: 100%;
@@ -277,7 +277,7 @@ figure {
   bottom: 0;
   top: 0;
   left: 0;
-  background-color: #7c5781;
+  background-color: #a45faf;
 	background-image: url(../images/BGoscuro.jpg);
   overflow-y: scroll;
 	overflow-x: hidden;
@@ -497,7 +497,7 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 }
 
 .ico-table th {
-  background-color: #7c5781;
+  background-color: #a45faf;
 }
 
 .table-borde {
@@ -635,7 +635,7 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   letter-spacing: .2em;
   padding: 4px 8px;
 	color: white;
-  background: #7c5781;
+  background: #a45faf;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
