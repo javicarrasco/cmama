@@ -49,10 +49,11 @@ table {
 
 /* =======================================================
 *
-colores CANCER PROSTATA:
+colores CANCER MAMA:
 dorado= #ffcc00
 dorado activo= #FAA300
 naranja= #ff5e00
+rosaclaro= #dc60bf
 rosa= #a45faf
 rosa oscuro= #74517b
 gris claro= #f8f7f4
@@ -82,7 +83,7 @@ body {
 }
 
 a {
-  color: #ff5e00;
+  color: #dc60bf;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -125,7 +126,6 @@ h2 {
   padding-bottom: .2em;
   color: white;
   line-height: 1em;
-  background-color: #ffcc00;
   display: inline-block;
 }
 h3 {
@@ -136,7 +136,6 @@ h4 {
   font-size: 20px;
   color: #ffcc00;
 }
-
 h5 {
   font-size: 18px;
   line-height: 1em;
@@ -163,24 +162,34 @@ figure {
 .dorado{
   color: #ffcc00;
 }
-.doradoActivo{
-  color: #FAA300;
-}
-.morado{
+.rosa{
   color: #a45faf;
+}
+.blanco{
+  color: #fff;
+}
+.doradoActivo{
+  color: #dc60bf;
 }
 .bgdorado{
   font-weight: 700;
-  color: #a45faf;
-  letter-spacing: 1.5px;
+  color: #fff;
   background-color: #ffcc00;
   padding-left: 3px;
   padding-right: 2px;
 }
-.bgColorTema{
+.bgrosaBold{
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.2px;
+  background-color: #a45faf;
+  padding-left: 3px;
+  padding-right: 2px;
+}
+.bgrosa{
   font-weight: 400;
   color: white;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   background-color: #a45faf;
   padding-left: 3px;
   padding-right: 2px;
@@ -272,13 +281,14 @@ figure {
 #ico-aside {
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 16%;
+  width: 18%;
   position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
   background-color: #a45faf;
-	background-image: url(../images/BGoscuro.jpg);
+	background-image: url(../images/BG.jpg);
+	background-size: 550%;
   overflow-y: scroll;
 	overflow-x: hidden;
   -webkit-transition: 0.5s;
@@ -309,7 +319,7 @@ figure {
 #ico-aside #ico-main-menu ul {
   text-align: left;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   #ico-aside #ico-main-menu ul {
@@ -331,7 +341,6 @@ figure {
   -o-transition: 0.3s;
   transition: 0.3s;
   padding: 10px 0px;
-	margin-left: -10px;
   font-family: "Montserrat", Arial, sans-serif;
 }
 #ico-aside #ico-main-menu ul ol li a {
@@ -357,8 +366,8 @@ figure {
   position: absolute;
   height: 4px;
   bottom: 7px;
-  left: 2px;
-  right: 2px;
+  left: 0px;
+  right: 0px;
   background-color: #ffcc00;
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -434,13 +443,14 @@ figure {
   color: #ffcc00;
 }
 #ico-main {
-  width: 84%;
+	width: 82%;
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 	background: #f8f7f4;
 }
+
 @media screen and (max-width: 1200px) {
   #ico-main {
     width: 75%;
@@ -524,14 +534,15 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 .tituloColor {
 	padding: 0px 10px;
 	color: #fff;
-	background: url(../images/BGoscuro.jpg);
+	background: url(../images/BG.jpg);
   display: -moz-inline-stack;
   display: inline-block;
 }
 .ico-franja {
   padding: 3em 0;
-	background: url(../images/BGoscuro.jpg);
-	background-size: 200%;
+	background-color: #a45faf;
+	background: url(../images/BG.jpg);
+	background-size: 100%;
 	background-attachment: fixed;
 }
 @media screen and (max-width: 768px) {
@@ -586,6 +597,7 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 	width: 350px;
  	display: block;
 }
+
 .ico-cards {
   padding: 1em 0;
   background: #f8f7f4;
@@ -642,44 +654,6 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   *display: inline;
 }
 
-.ico-counter .ico-number {
-  font-size: 100px;
-  color: #ffcc00;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  line-height: .7;
-}
-.ico-counter .ico-number.ico-left {
-  float: left;
-  width: 30%;
-}
-@media screen and (max-width: 768px) {
-  .ico-counter .ico-number.ico-left {
-    width: 100%;
-    line-height: 1.2;
-  }
-}
-.ico-counter .ico-text {
-  float: right;
-  text-align: left;
-  width: 70%;
-}
-@media screen and (max-width: 768px) {
-  .ico-counter .ico-text {
-    width: 100%;
-    text-align: center;
-  }
-}
-.ico-counter .ico-text h3 {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.ico-counter .ico-text h3.border-bottom:after {
-  content: "";
-  width: 50px;
-}
 
 @media screen and (max-width: 768px) {
   .ico-social li a {
@@ -738,7 +712,7 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 }
 @media screen and (max-width: 768px) {
   .ico-feature .ico-text {
-    width: 84%;
+    width: 82%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -778,13 +752,13 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   }
 }
 
-.ico-staff img {
+.ico-tres img {
   margin-bottom: .5em;
 }
-.ico-staff h3 {
+.ico-tres h3 {
   margin: 0;
 }
-.ico-staff h4 {
+.ico-tres h4 {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -995,11 +969,12 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   border: 2px solid #ffcc00;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ff5e00 !important;
-  border-color: #ff5e00 !important;
+  background: #dc60bf !important;
+  border-color: #dc60bf !important;
 }
 .btn-primary.btn-outline {
-	background-image: url(../images/BGoscuro.jpg);
+	background-image: url(../images/BG.jpg);
+	background-size: 1000%;
   color: white;
   border: 0px solid #ffcc00;
 }
