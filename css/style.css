@@ -257,12 +257,13 @@ figure {
 		opacity: 0.9;
 }
 .destacado {
-	  max-width: 500px;
+	  max-width: 750px;
     margin: 0 auto;
 		opacity: 0.9;
 }
 .destacado h5{
 		font-weight: 600;
+		line-height: 1.2;
 	  text-align: center;
 		color: #a45faf;
 		margin-bottom: -9px;
@@ -519,6 +520,31 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 
 .ico-table tr:hover {background-color: #ddd;}
 
+
+
+.ico-fondotable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ico-fondotable td, .ico-fondotable th {
+  border: 0px solid #ddd;
+  padding: 5px;
+}
+
+.ico-fondotable th {
+  background-color: #a45faf;
+}
+
+.fondotable-borde {
+  border-bottom: 1px solid #D3D3D3;
+}
+
+
+.ico-fondotable tr:nth-child(even){background-color: transparent;}
+
+.ico-fondotable tr:hover {background-color: #ddd;}
+
 .ico-services {
   margin-top: 5px;
 }
@@ -537,6 +563,13 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 	background: url(../images/BG.jpg);
   display: -moz-inline-stack;
   display: inline-block;
+}
+.ico-fondo {
+	background-attachment: fixed;
+	width: 100%;
+	background: #fff;
+	background-image: url(../images/BG.png);
+	padding: 30px;
 }
 .ico-franja {
   padding: 3em 0;
@@ -1062,7 +1095,7 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 .btn-outline {
   background: none;
   border: 2px solid gray;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
