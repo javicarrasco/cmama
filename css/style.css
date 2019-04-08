@@ -283,6 +283,41 @@ figure {
 	  text-align: center;
 		color: #a45faf;
 }
+.marco{
+	border:2px solid #ffcc00;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius:4px;
+	transition:.6s;
+}
+.marco:hover{
+	background: #fff;
+}
+.marco:hover .single_left_icon i{
+	background: #f2f2f2;
+	color:#21CFAC;
+}
+.marco:hover .separator2{
+	border-bottom: 3px solid #f2f2f2;
+}
+.marcoOSCURO{
+	border:2px solid #ddd;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius:4px;
+	transition:.6s;
+}
+.marcoOSCURO:hover{
+	background: #351B9E;
+	color: #f2f2f2;
+}
+.marcoOSCURO:hover .single_left_icon i{
+	background: #f2f2f2;
+	color:#21CFAC;
+}
+.marcoOSCURO:hover .separator2{
+	border-bottom: 3px solid #f2f2f2;
+}
 #ico-page {
   width: 100%;
   overflow: hidden;
