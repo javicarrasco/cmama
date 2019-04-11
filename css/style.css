@@ -307,12 +307,25 @@ figure {
 	  text-align: center;
 		color: #a45faf;
 }
+.marcoTexto{
+	border:2px solid #ffcc00;
+	margin: 15px;
+	border-radius: 20px;
+}
+.marcoTexto:hover{
+	background: #ffcc00;
+	color: #fff;
+}
 .marco{
 	border:2px solid #ffcc00;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-radius:4px;
 	transition:.6s;
+}
+.marco p{
+	margin-left: 50px;
+	margin-right: 50px;
 }
 .marco:hover{
 	background: #fff;
