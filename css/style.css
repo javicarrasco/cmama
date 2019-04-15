@@ -51,7 +51,7 @@ table {
 *
 colores CANCER MAMA:
 dorado= #ffcc00
-dorado activo= #FAA300
+dorado negrita= #FAA300
 naranja= #ff5e00
 rosaclaro= #dc60bf
 rosa= #a45faf
@@ -148,13 +148,11 @@ h6 {
   line-height: 1.4em;
 }
 label {
-  font-size: 30px;
-  padding-left: .2em;
-  padding-right: .2em;
-  padding-top: .2em;
-  padding-bottom: .2em;
-  color: white;
-  line-height: 1em;
+	color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4em;
   display: inline-block;
 }
 figure {
@@ -315,6 +313,10 @@ figure {
 .marcoTexto:hover{
 	background: #ffcc00;
 	color: #fff;
+}
+.marcoTexto:hover img{
+	mix-blend-mode: darken;
+	transform: scale(1.05);
 }
 .marco{
 	border:2px solid #ffcc00;
@@ -888,7 +890,6 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
