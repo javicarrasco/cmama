@@ -19,7 +19,6 @@ function cerrarIncorrecto() {
             div.style.display = 'none';
         }
 
-
 function resultado() {
         var p1;
 
@@ -28,7 +27,32 @@ function resultado() {
         }
 
 
+
+
 function mostrarB() {
         div = document.getElementById('flotanteB');
         div.style.display = '';
-                }
+        }
+
+function mostrarIncorrectoB() {
+        div = document.getElementById('flotanteIncorrectoB');
+        div.style.display = '';
+        }
+
+
+function cerrarB() {
+        div = document.getElementById('flotanteB');
+        div.style.display = 'none';
+        }
+
+function cerrarIncorrectoB() {
+        div = document.getElementById('flotanteIncorrectoB');
+        div.style.display = 'none';
+        }
+
+function resultadoB() {
+        var b1;
+
+        if (document.getElementById('b1').checked==true) {cerrarIncorrectoB(), mostrarB()}
+        else {cerrarB(), mostrarIncorrectoB()}
+        }

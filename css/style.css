@@ -43,7 +43,9 @@ table {
 }
 
 
-*{
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -170,10 +172,6 @@ figure {
 .dorado{
   color: #ffcc00;
 }
-.naranja{
-  color: #ff8a00;
-	opacity: 0.7;
-}
 .rosa{
   color: #a45faf;
 }
@@ -181,8 +179,8 @@ figure {
   color: #fff;
 }
 .doradoActivo{
-  color: #dc60bf;
-	opacity: 0.7;
+  color: #B767A4;
+	opacity: 0.9;
 }
 .bgdorado{
   font-weight: 700;
@@ -206,8 +204,11 @@ figure {
   color: #a45faf;
   letter-spacing: 1.2px;
   background-color: #e9b9f1;
-  padding-left: 3px;
-  padding-right: 2px;
+  padding: 0px 5px;
+	-webkit-box-shadow: inset 0px 0px 224px 10px rgba(242,242,242,1);
+  -moz-box-shadow: inset 0px 0px 224px 10px rgba(242,242,242,1);
+  box-shadow: inset 0px 0px 224px 10px rgba(242,242,242,1);
+
 }
 .bgrosa{
   font-weight: 400;
@@ -225,7 +226,7 @@ figure {
   font-weight: bold;
 }
 .gris{
-  opacity: 0.6;
+  opacity: 0.7;
 }
 ::-webkit-selection {
   color: #fff;
@@ -271,7 +272,7 @@ figure {
     align-items: center;
 }
 .piefoto {
-	  max-width: 600px;
+	  max-width: 800px;
     margin: 0 auto;
 }
 .piefoto p{
@@ -288,27 +289,19 @@ figure {
 		font-style: italic;
 		opacity: 0.9;
 }
-.destacado {
-	  max-width: 750px;
-    margin: 0 auto;
-		opacity: 0.9;
-}
-.destacado h5{
-		font-weight: 600;
-		line-height: 1.2;
-	  text-align: center;
-		color: #a45faf;
-		margin-bottom: -9px;
-}
-.destacado p{
-		line-height: 1.2;
-	  text-align: center;
-		color: #a45faf;
-}
 .marcoTexto{
-	border:2px solid #ffcc00;
-	margin: 15px;
+	border: 2px solid #ffcc00;
+	margin: 35px;
 	border-radius: 20px;
+}
+.marcoTexto h5{
+	color: #B767A4;
+	opacity: 0.9;
+	font-weight: 600;
+	font-size: 1.6em;
+}
+.marcoTexto:hover h5{
+	color: #fff;
 }
 .marcoTexto:hover{
 	background: #ffcc00;
@@ -322,7 +315,7 @@ figure {
 	border:2px solid #ffcc00;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-radius:4px;
+	border-radius: 20px;
 	transition:.6s;
 }
 .marco p{
@@ -333,29 +326,29 @@ figure {
 	background: #fff;
 }
 .marco:hover .single_left_icon i{
-	background: #f2f2f2;
+	background: #f8f7f4;
 	color:#21CFAC;
 }
 .marco:hover .separator2{
-	border-bottom: 3px solid #f2f2f2;
+	border-bottom: 3px solid #f8f7f4;
 }
 .marcoOSCURO{
-	border:2px solid #ddd;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	border-radius:4px;
-	transition:.6s;
+	border:2px solid #ffcc00;
+	border-radius: 20px;
+	padding: 15px;
+}
+.marcoOSCURO h5{
+	color: #B767A4;
+	opacity: 0.7;
+	font-weight: 600;
+	font-size: 1.6em;
 }
 .marcoOSCURO:hover{
-	background: #351B9E;
-	color: #f2f2f2;
+	background: #ffcc00;
+	color: #fff;
 }
-.marcoOSCURO:hover .single_left_icon i{
-	background: #f2f2f2;
-	color:#21CFAC;
-}
-.marcoOSCURO:hover .separator2{
-	border-bottom: 3px solid #f2f2f2;
+.marcoOSCURO:hover h5{
+	color: #fff;
 }
 #ico-page {
   width: 100%;
@@ -364,8 +357,8 @@ figure {
 }
 
 #ico-aside {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   width: 18%;
   position: fixed;
   bottom: 0;
@@ -404,7 +397,7 @@ figure {
 #ico-aside #ico-main-menu ul {
   text-align: left;
   margin: 0;
-  padding: 10px;
+  padding-left: 10px;
 }
 @media screen and (max-width: 768px) {
   #ico-aside #ico-main-menu ul {
@@ -412,7 +405,7 @@ figure {
   }
 }
 #ico-aside #ico-main-menu ul li {
-  margin: 0 0 5px 0;
+  margin: 0 0 2px 0;
   padding: 0;
   list-style: none;
 }
@@ -488,6 +481,17 @@ figure {
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
   transform: scaleX(1);
+}
+#ico-aside #ico-main-menu ul li.ico-blanco a {
+  color: white;
+}
+#ico-aside #ico-main-menu ul li.ico-blanco a:after {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
 }
 #ico-aside .ico-footer {
   bottom: 30px;
@@ -588,11 +592,14 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 
 .ico-table td, .ico-table th {
   border: 0px solid #ddd;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
 }
 
 .ico-table th {
   background-color: #a45faf;
+}
+.ico-table td h6 {
+  font-size: 14px;
 }
 
 .table-borde {
@@ -613,11 +620,14 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 
 .ico-fondotable td, .ico-fondotable th {
   border: 0px solid #ddd;
-  padding: 5px;
+	padding-right: 10px;
+	line-height: 70%;
 }
-
-.ico-fondotable th {
-  background-color: #a45faf;
+.ico-fondotable td p, .ico-fondotable th p{
+	line-height: 100%;
+}
+.ico-fondotable td h6, .ico-fondotable th h6{
+	line-height: 100%;
 }
 
 .fondotable-borde {
@@ -653,7 +663,10 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 	width: 100%;
 	background: #fff;
 	background-image: url(../images/BG.png);
-	padding: 30px;
+	opacity: 0.6;
+	-webkit-box-shadow: inset 0px 0px 1000px 10px rgba(242,242,242,1);
+  -moz-box-shadow: inset 0px 0px 1000px 10px rgba(242,242,242,1);
+  box-shadow: inset 0px 0px 1000px 10px rgba(242,242,242,1);
 }
 .ico-franja {
   padding: 3em 0;
@@ -759,16 +772,11 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
   margin-bottom: 0;
 }
 .ico-cards .ico-flex-wrap .ico-card h5 {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: .2em;
-  padding: 4px 8px;
-	color: white;
-  background: #a45faf;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
+	color: #B767A4;
+	opacity: 0.9;
+	font-weight: 600;
+	font-size: 1.6em;
+
 }
 
 
@@ -1442,5 +1450,3 @@ body.offcanvas #ico-main, body.offcanvas .ico-nav-toggle {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
