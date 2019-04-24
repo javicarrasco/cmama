@@ -265,7 +265,7 @@ figure {
 .centrada{
 	display: flex;
   justify-content: center;
-	margin: 10px auto;
+	margin: 50px auto;
 }
 .contenedor {
     display: flex;
